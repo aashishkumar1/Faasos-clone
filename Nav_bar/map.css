@@ -1,7 +1,0 @@
-
-body{margin: 0}
-#map{
-    width: 20%; height: 50vh;margin:auto;padding: 0;display:none;
-}
-.infoCls_map{margin-top: 60px !important;min-width: 300px}
-#auto{color: #000;max-width: 99%;width:300px;position:absolute;font-size: 18px;font-weight:bold;border: 1px solid rgb(255, 255, 255);outline: none !important;top:5px;border-radius:10px;margin: top 0;padding-top: 10px;}
