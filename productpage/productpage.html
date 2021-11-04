@@ -4,185 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <style>
-        *{
-            font-family: sans-serif;
-        }
-        body{
-            background-color: whitesmoke;
-
-        }
-
-        /* Image Carousel  */
-        .swiper {
-        width: 100%;
-      }
-
-      .swiper-slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin-right: 10px;
-      }
-      .swiper-btn {
-        background-color: white;
-        padding: 10px 15px;
-        border-radius: 50%;
-      }
-      .swiper-button-next:after,
-      .swiper-button-prev:after {
-        font-size: 21px;
-        color: black;
-        font-weight: 900;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-      }
-
-      @media only screen and (min-width: 769px) {
-        .swiper-slide:first-child {
-          transition: transform 100ms;
-        }
-
-        .swiper-slide:first-child img {
-          transition: box-shadow 500ms;
-        }
-
-        .swiper-slide.swiper-slide-active:first-child {
-          transform: translateX(50%);
-          z-index: 2;
-        }
-
-        .swiper-slide.swiper-slide-active:first-child img {
-          box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
-        }
-
-        .swiper-slide:nth-child(2) {
-          transition: transform 100ms;
-        }
-
-        .swiper-slide.swiper-slide-next:nth-child(2) {
-          transform: translateX(55%);
-          z-index: 1;
-        }
-
-        .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
-          transform: translateX(-50%);
-        }
-
-        .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
-          transform: translateX(-55%);
-        }
-      }
-
-  /* Image Carousel End */
-        .box{
-            border: 1px solid black;
-        }
-        .container{
-            width: 85%;
-            margin: auto;
-
-        }
-        .container div{
-            margin: 1%;
-        }
-        .row{
-            display: flex;
-           
-        }
-        .center{
-            align-items: center;
-        }
-        .col-left{
-            width: 15%;
-            height: 390px;
-            padding: 15px;
-            background-color: white;
-            border: none;
-            border-radius: 2px;
-
-        }
-        .col-mid{
-            width: 50%;
-            border-radius: 2px;
-            display: grid;
-            grid-template-columns: repeat(2,49%);
-           column-gap: 3%;
-           row-gap: 0.5%;
-        }
-        .col-right{
-            width: 33%;
-
-            border-radius: 2px;
-            border: none;
-            background-color: white;
-            padding: 15px;
-
-        }
-        .cart-small-txt{
-            font-size: 12px;
-            color:#BDBDBD;
-
-        }
-        .cart-left{
-            width: 50%;
-        }
-        .item-btn{
-            border: 1px solid #FFA000;
-            background-color: white;
-            color: black;
-            font-size: 18px;
-            border-radius: 4px 7px 7px 4px;
-            margin: 8px;
-            height: 40px;
-            width: 40px;
-        }
-        #plus-btn{
-            border-radius: 7px 4px 4px 7px;
-
-        }
-        .p-text-color{
-            color:#726e6e;
-            font-size: 14px;
-
-        }
-        .margin{
-            margin: 6px;
-        }
-        .addtoCartBtn{
-            width: 50%;
-            height: 30px;
-            border-radius: 4px;
-            font-size: 15px;
-            font-weight: 500;
-            color: black;
-            border: none;
-            background-color: #FFCA28; 
-        }
-        .checkout-btn{
-            width: 100%;
-            height: 46px;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: 600;
-            color: black;
-            border: none;
-            background-color: #FFCA28;
-        }
-        .line-height{
-            line-height: 0%;
-        }
-    </style>
+    <title>Order Food Online from Faasos</title>
+    <link rel="icon" href="https://c2.iwebchk.com/icon/view/order.faasos.io"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./product_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- Image Carousel Start-->
@@ -209,63 +36,108 @@
   </div>
 <!-- Image Carousel End-->
 
-
-    <div class="container box "> 
-        <div class="row">
-            <div class="col-left box "> 
-         <p class="p-text-color" id="p1" >Fab Wraps starting at 99 each</p>
-         <p class="p-text-color" id="p2" >Daily Value Wrap Combos (Save Upto 40% Extra)</p>
-         <p class="p-text-color" id="p3">Combos for 1 (Upto 15% Savings)</p>
-         <p class="p-text-color" id="p4">Super Saver Match Day Combos at Rs444</p>
-         <p class="p-text-color" id="p5">Combos for 4 (Upto 25% Savings)</p>
-         <p class="p-text-color" id="p6">Signature Wraps</p>
-         <p class="p-text-color" id="p7">Classic Wraps</p>
-         <p class="p-text-color" id="p8">Rice Bowls</p>
-         <p class="p-text-color" id="p9">Sides And Beverages</p>
-         <p class="p-text-color" id="p10">Desserts-</p>
-
-            </div>
-            <div class="col-mid box " id="mid-container"> </div>
-            <div class="col-right box "> 
-            <div class="row center ">
-                <h2 class="margin ">Cart</h2>
-                <p id="qty">Q.</p>
-                <p>item</p>
-            </div>  
-            <div class="row center">
-                <div class="cart-left">
-                    <img src="" alt="">
-                    <h4 class="line-height p-text-color "> Fab & Creamy Combo</h4>
-                    <p class="cart-small-txt">Choco Lava (Save Rs 20),Thums Up (250ml) Choco Lava (Save Rs20),Coca-Cola Bottle (475 ML),</p>
-                </div>
-                <div class="row center">
-                    <button id="minus-btn" class="item-btn">-</button>
-                    <p>2</p>
-                    <button id="plus-btn" class="item-btn">+</button>
-
-                </div>
-                <div class="cart-right">₹ </div>
-                <p class="total-price">529</p>
-            </div>
-
-            <div class="row ">
-                <div class="cart-bottom-left">
-                    <h2 class="line-height">SubTotal</h2>
-                    <p class="p-text-color" >Extra charges may apply</p>
-                </div>
-                <div class="row ">
-                   <p>₹</p>
-                    <p>529</p>
-               </div>
-            </div>  
-            <button onclick="gotoCart()" class="checkout-btn" id="checkout">CHECKOUT</button>  
-
-            </div>
-
-        </div>
+<!--search Bar-->
+  <!--Modal content-->
+  <div id="searchModal">
+    <div id="modalContent">
+        <button id="close">←</button>
+        <input type="text" placeholder="Search for Dishes" id="searchData-appear" oninput="searchFoodData()"/>
+        <i class="fa fa-search"></i>
     </div>
+    <div id="searchContent"></div>
+  </div>
+
+<!--Serarch bar and filters for Veg and Non-veg-->
+<div id="search-container">
+  <div  id="searchhead">
+      <div>
+          Order Food Online
+      </div>
+      <div>
+          <div id="search" onclick="search()">
+              <i class="fa fa-search"></i>
+              <div>Search for wraps</div>
+          </div>
+          <div>
+              <input type="checkbox"/>
+              <div>Non-Veg Only</div>
+          </div>
+          <div>
+              <input type="checkbox"/>
+              <div>Veg Only</div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--search bar End-->
+
+
+
+  <div class="container box "> 
+      <div class="row">
+          <div class="col-left"> 
+       <p class="p-text-color" id="p1" >Fab Wraps starting at 99 each</p>
+       <p class="p-text-color" id="p2" >Daily Value Wrap Combos (Save Upto 40% Extra)</p>
+       <p class="p-text-color" id="p3">Combos for 1 (Upto 15% Savings)</p>
+       <p class="p-text-color" id="p4">Super Saver Match Day Combos at Rs444</p>
+       <p class="p-text-color" id="p5">Combos for 4 (Upto 25% Savings)</p>
+       <p class="p-text-color" id="p6">Signature Wraps</p>
+       <p class="p-text-color" id="p7">Classic Wraps</p>
+       <p class="p-text-color" id="p8">Rice Bowls</p>
+       <p class="p-text-color" id="p9">Sides And Beverages</p>
+       <p class="p-text-color" id="p10">Desserts-</p>
+
+          </div>
+          <div class="col-mid box p-text-color " id="mid-container"> </div>
+          <div class="col-right "> 
+          <div class="row center ">
+           
+              <h2 class="margin ">Cart</h2>
+              <p id="qty">Q.</p>
+              <p>Item</p>
+          </div>  
+          <div class=" center">
+              <div class="cart-left p-text-color" id="cart-item">
+                  
+              </div>
+            
+
+          <div class="row ">
+              <div class="cart-bottom-left">
+                  <h2 class="line-height">SubTotal</h2>
+                  <p class="p-text-color" >Extra charges may apply</p>
+              </div>
+              <div class="row cart-bottom-right">
+                 <p id="total"></p>
+             </div>
+          </div>  
+          <button onclick="gotoCart()" class="checkout-btn" id="checkout">CHECKOUT</button>  
+
+          </div>
+
+      </div>
+  </div>
+   <!-- div for customization -->
+            <div class="custom-parent">
+              <div class="custom">
+                <div class="custom-top">
+                  <div id="custom-close"><i onclick="close_custom()" class="fas fa-times"></i></div>
+                  <div>Customization</div>
+                </div>
+                <div class="custom-middle">
+
+                </div>
+                <div class="custom-bottom">
+                  <p>Apply</p>
+                </div>
+              </div>
+            </div>
+            <!-- end of customization div -->
+
+</html>
 </body>
 </html>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="product.js"></script>
 <script src="carousel.js"></script>
+<script src="search.js"></script>

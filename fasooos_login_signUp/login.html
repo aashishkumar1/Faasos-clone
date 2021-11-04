@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- <script type="text/javascript" href="login.js"></script> -->
+</head>
+<body>
+   <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+      <div id="top">
+    <div class="close"> <img id="cl"src="https://cdn1.iconfinder.com/data/icons/ui-ux-essential-1/16/chevron-right-512.png"/> LogIn</div>
+    <img id="img"src="https://assets.faasos.io/faasos_v2/mask1.svg"> 
+</div>
+    <span class="color-l">Enter your phone Number to continue</span><br><br><br>
+    <form onsubmit="getdata(event)">
+       
+        <select id="country-code" onchange="get()" class="arrenge">
+            <option value="+91">India</option>
+            <option value="+93"> Afganishtan</option>
+            <option value="+61">Australiya</option>
+            <option value="+880">Bangladesh</option>
+            <option value="+32">Barbados</option>
+            <option value="+32">Belgium</option>
+            <option value="+1">Canada</option>
+            <option value="+86">chine</option>
+            <option value="+81">Japan</option>
+            <option value="+52">Maxico</option>
+            <option value="+64">New Zeland</option>
+            <option value="+82">Sout Korea</option>
+            <option value="+1">US</option>
+            <option value="+967">Yemen</option>
+            <option value="+260">Zambia</option>
+        </select>
+        <div id="span-F">
+            <div id="code">+91</div>
+        <input id="number" type="text"placeholder="phone Number"pattern="[1-9]{1}[0-9]{9}"  required ></input>
+    </div>
+        <button id="btn"  type="submit">continue</button><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p id="lin">Don’t have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+</div> 
+</body>
+<script src="loginScript.js"></script>
+</html>

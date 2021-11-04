@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+</head>
+<style>
+    body {
+        background-color: rgb(238, 238, 238);
+    }
+    /* div {
+        border: 1px solid rgb(255, 255, 255);
+    } */
+    #linhit {
+        line-height: 0px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .mar {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .marl {
+        padding-left: 15px;
+    }
+    .top {
+        /* margin-top: 0px; */
+        margin-bottom: 50px;
+        background-color: white;
+    }
+    #backbtn {
+        font-size: 18px;
+    }
+    #headerlow {
+        font-size: 13px;
+    }
+    #btn {
+        color: black;
+        background-color: rgb(233, 191, 52);
+        width: 200px;
+        height: 40px;
+        border-radius: 8px;
+        margin-right: 50px;
+        margin-top: 26px;
+    }
+    .btndiv{
+        text-align: center;
+        margin-left: 250px;
+    }
+    .cnt1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        line-height: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+    .height {
+        height: 100px;
+        border-radius: 20px;
+    }
+    #chat {
+        text-align: right;
+        padding-top: 40px;
+        padding-right: 80px;
+        font-weight: 600;
+        color: blue;
+    }
+    #dtl {
+        padding-top: 23px;
+        line-height: 24px;
+    }
+    #hlp {
+        margin-top: 25px;
+        font-size: 20px;
+        font-weight: 520;
+        padding-top: 14px;
+    }
+    #qurs {
+        padding-top: 1px;
+    }
+</style>
+<body>
+    <div class="top" >
+        <div class="mar" id="linhit">
+            <h2> <span id="backbtn"><</span>&nbsp; Help & Support</h2> 
+            <span id="headerlow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help with your orders and other queries</span>
+        </div>
+    </div>
+    <div class="mar">
+        <div  class="top height cnt1">
+            <div>
+                <h3>Manage your orders</h3>
+                If you need help with your previous orders.
+            </div>
+            <div class="btndiv">
+                <div id="btn"><div id="hlp">Get Help</div></div>
+                <!-- <button id="btn">Get Help</button> -->
+            </div>
+        </div>
+        <div class="top marl height cnt1">
+            <div id="dtl">
+                If you need help related to placing an order or need information, our bot will help you.
+            </div>
+            <div class="btndiv" id="chat">
+                Chat with Us
+            </div>
+        </div>
+        <div class="top marl height" id="qurs">
+            <h4> Current queries &nbsp; Past Queries </h4>
+            No Queries found
+        </div>
+    </div>
+</body>
+</html>

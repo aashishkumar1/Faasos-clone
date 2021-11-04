@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="address.css" />
+    <style></style>
+</head>
+
+<body>
+    <div class="
+        address_focus
+        bg-gray-300
+        w-100
+        flex
+        justify-center
+        items-center
+      ">
+        <div class="address  bg-white align-middle">
+            <div id="map" class="h-80 w-full"></div>
+            <div class="place flex items-center pt-5">
+                <i class="fas fa-map-marker-alt pl-2"></i>
+                <h1 id="town" class="text-lg font-normal pl-2"></h1>
+            </div>
+            <p id="address" class="text-xs pl-2 tracking-wider"></p>
+            <div class="address_form">
+                <form class="bg-white rounded px-8 pt-6 mb-4">
+                    <input type="hidden" name="" id="LATITUDE_ELEMENT_ID">
+                    <input type="hidden" id="LONGITUDE_ELEMENT_ID" value="">
+                    <div class="mb-4">
+                        <input class="
+                  fly-up-content
+                  shadow
+                  appearance-none
+                  border 
+                  rounded 
+                  w-full 
+                  py-2
+                  px-3
+                  leading-tight
+                  focus:outline-none focus:shadow-outline
+                " id="house"/>
+                        <span class="fly-up-1 text-gray-400">House/Flat no.</span>
+                    </div>
+                    <div class="mb-6">
+                        <input class="
+                  fly-up-content
+                  shadow
+                  appearance-none
+                  border
+                  rounded
+                  w-full
+                  py-2
+                  px-3
+                  mb-3
+                  leading-tight
+                  focus:outline-none focus:shadow-outline
+                "  id="landmark"
+                />
+                        <span class="fly-up-2 text-gray-400">Landmark</span>
+                    </div>
+                </form>
+            </div>
+            <div class="buttons  w-full m-2   items-center">
+
+                <div class="btn_wrapper justify-between grid grid-cols-3 gap-4 ">
+                    <button id="1" onclick="activate(this)"
+                        class=".checkStatus w-24 rounded-3xl inline-flex items-center py-2 font-medium px-4 w- 6 leading-5 text-primary-100 text-white ">
+                        <i class="fas fas fa-home inline-block w-5 h-5 mr-1"></i>
+                        Home
+                    </button>
+
+                    <button id="2" onclick="activate(this)"
+                        class="checkStatus w-24 rounded-3xl inline-flex items-center py-2  font-normal  px-4 w- 6 leading-5  text-primary-100 text-white ">
+                        </i> <i class=" fas fa-briefcase inline-block w-5 h-5 mr-1"></i>
+                        Work
+                    </button>
+
+                    <button id='3' onclick="activate(this)"
+                        class="active checkStatus w-24 rounded-3xl inline-flex items-center py-2 font-medium  px-4 w- 6 leading-5  text-primary-100 text-white">
+                        <i class="fas fa-map-marker-alt inline-block w-5 h-5 mr-1"></i>
+
+                        Others
+                    </button>
+                </div>
+
+            </div>
+            <div class="save">
+                <button class='save_btn' onclick="saveAddress()">SAVE</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFqHdww7qwKP8nyQ4MUNFDPAgnfzNbZAU"></script>
+    <script src="https://unpkg.com/location-picker/dist/location-picker.min.js"></script>
+    
+    <script src="address.js"></script>
+    
+</body>
+
+</html>
