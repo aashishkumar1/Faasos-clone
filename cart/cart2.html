@@ -21,6 +21,7 @@
         body{
             background-color: whitesmoke;
              font-family: "Poppins", sans-serif;
+             overflow: scroll;
             }
 
         .box{
@@ -43,6 +44,10 @@
         .center{
             align-items: center;
         }
+
+        .grand-total  p{
+            padding-top: 1rem;
+        }
         .col-left{
             width: 57%;
             height: 600px;
@@ -59,7 +64,6 @@
             text-align: center;
         }
         .add-new{
-            
             width: 30%;
             height: 33px;
             border-radius: 4px;
@@ -449,8 +453,8 @@ form {
                     <h2>Delivery Address</h2>
                     <div class="addAddress">
                         <h2>ADD NEW ADDRESS</h2>
-                        <button id="addAddress" class="add-new">Add New</button>
-                    </div>
+                        <button id="addAddress" class="add-new mt-4">Add New</button>
+                    </div> 
                 </div>
                 <div class="cart-payment">
                     <h2>Payment</h2>
@@ -463,7 +467,7 @@ form {
             <div class="row center ">
                 <h2 class="margin ">Cart</h2>
                 <p id="qty">Q.</p>
-                <p></p>
+                <p></p> 
             </div>  
             <div class=" center">
 
@@ -474,12 +478,12 @@ form {
 
                 <p class="p-text-color ">You can either apply coupon or credits</p>
                 
-                <div class="credits row center ">
+                <div class="credits row center pt-4">
                     <div class="row center">
                         <img class="credit-img" src="https://github.com/pankaj5417/koovs.com/blob/main/icons/Screenshot%202021-11-02%20233252.png?raw=true" alt="">
                         <div class="credits-mid-txt">
-                            <h5 class="line-height p-text-color">FAASOS CREDITS</h5>
-                            <h6 class="p-text-color">Click to Apply 0 Credits</h6>
+                            <h5 class="line-height p-text-color ">FAASOS CREDITS</h5>
+                            <h6 class="p-text-color pt-4">Click to Apply 0 Credits</h6>
                         </div>
                     </div>
                    
@@ -520,7 +524,7 @@ form {
                     <hr>
                     <div class="row ">
                         <div class="cart-bottom-left">
-                            <h2 class="line-height">GrandTotal</h2>
+                            <h2 class="line-height p-4">GrandTotal</h2>
                         </div>
                         <div class="row cart-bottom-right">
                            <p class="" id="total"></p>
